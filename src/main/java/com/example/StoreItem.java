@@ -1,5 +1,7 @@
 package com.example;
 
+import java.time.LocalDate;
+
 public class StoreItem
 
 {
@@ -10,14 +12,13 @@ public class StoreItem
     private final Integer stockAvailable;
     private final String packagingType;
 
-    public StoreItem(String name, Double price, String shortDescription, String longDescription,
-                     Integer stockAvailable, String packagingType) {
-        this.name = name;
-        this.price = price;
-        this.shortDescription = shortDescription;
-        this.longDescription = longDescription;
-        this.stockAvailable = stockAvailable;
-        this.packagingType = packagingType;
+    private StoreItem(StoreItemBuilder storeItemBuilder) {
+        this.name = storeItemBuilder.name;
+        this.price = storeItemBuilder.price;
+        this.shortDescription = storeItemBuilder.shortDescription;
+        this.longDescription = storeItemBuilder.longDescription;
+        this.stockAvailable = storeItemBuilder.stockAvailable;
+        this.packagingType = storeItemBuilder.packagingType;
         if (name == null || price == null) {
             throw new IllegalArgumentException("Name and price must not be null");
         }
@@ -25,13 +26,56 @@ public class StoreItem
 
     @Override
     public String toString() {
-        return "Person{" +
-                "firstName='" + name + '\'' +
-                ", middleName='" + price + '\'' +
-                ", lastName='" + shortDescription + '\'' +
-                ", dateOfBirth=" + longDescription +
-                ", emailAddress='" + stockAvailable + '\'' +
-                ", address='" + packagingType + '\'' +
+        return "StoreItem{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", shortDescription='" + shortDescription + '\'' +
+                ", longDescription='" + longDescription + '\'' +
+                ", stockAvailable=" + stockAvailable +
+                ", packagingType='" + packagingType + '\'' +
                 '}';
     }
+
+    public static class StoreItemBuilder {
+
+        private String name;
+        private Double price;
+        private String shortDescription;
+        private String longDescription;
+        private Integer stockAvailable;
+        private String packagingType;
+
+        public StoreItemBuilder(String name, Double price) {
+            this.name = name;
+            this.price = price;
+            if (name == null || price == null) {
+                throw new IllegalArgumentException("Name and price must not be null");
+            }
+        }
+
+        public StoreItemBuilder shortDescription(String shortDescription) {
+            this.shortDescription = shortDescription;
+            return this;
+        }
+
+        public StoreItemBuilder longDescription(String longDescription) {
+            this.longDescription = longDescription;
+            return this;
+        }
+
+        public StoreItemBuilder stockAvailable(Integer stockAvailable) {
+            this.stockAvailable = stockAvailable;
+            return this;
+        }
+
+        public StoreItemBuilder packagingType(String packagingType) {
+            this.packagingType = packagingType;
+            return this;
+        }
+
+        public StoreItem build() {
+            return new StoreItem(this);
+        }
+    }
+
 }
