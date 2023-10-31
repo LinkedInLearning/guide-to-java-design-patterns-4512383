@@ -2,8 +2,8 @@ package com.example;
 
 public class DocumentPrinter {
 
-    public void printImage() {
-        var spooler = new PrintSpooler();
+    public void printDocument() {
+        var spooler = PrintSpooler.getInstance();
         spooler.print();
     }
 
