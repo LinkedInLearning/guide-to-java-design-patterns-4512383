@@ -3,9 +3,9 @@ package com.example;
 public class Cat {
 
 
-    private final Logger logger = new Logger();
+    private final Logger logger = Logger.getInstance();
 
-    public void woof() {
+    public void meow() {
         logger.log("Meow");
     }
 
