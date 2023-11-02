@@ -2,18 +2,18 @@ package com.example;
 
 public class Pizza extends Meal {
 
-    public Pizza(int price, String flavour) {
+    private PizzaFlavour flavour;
+
+    public Pizza(int price, PizzaFlavour flavour) {
         super(price);
         this.flavour = flavour;
     }
 
-    private String flavour;
-
-    public String getFlavour() {
+    public PizzaFlavour getFlavour() {
         return flavour;
     }
 
-    public void setFlavour(String flavour) {
+    public void setFlavour(PizzaFlavour flavour) {
         this.flavour = flavour;
     }
 
@@ -27,7 +27,7 @@ public class Pizza extends Meal {
     }
 
     @Override
-    public Meal clone() {
+    public Pizza clone() {
         return new Pizza(this.getPrice(), this.getFlavour());
     }
 }
