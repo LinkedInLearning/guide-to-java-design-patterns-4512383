@@ -1,10 +1,10 @@
 package com.example;
 
-public class PizzaFlavour {
+public class PizzaFlavor {
 
     private String name;
 
-    public PizzaFlavour(String name) {
+    public PizzaFlavor(String name) {
         this.name = name;
     }
 

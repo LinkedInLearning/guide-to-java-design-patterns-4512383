@@ -6,15 +6,15 @@ public class OrderTracker {
 
     public static void main(String[] args) {
 
-        PizzaFlavour hawaiian = new PizzaFlavour("Hawaiian");
-        Pizza hawaiianPizza1 = new Pizza(4, hawaiian);
+        PizzaFlavor hawaiianFlavor = new PizzaFlavor("Hawaiian");
+        Pizza hawaiianPizza1 = new Pizza(4, hawaiianFlavor);
         Pizza hawaiianPizza2 = hawaiianPizza1.clone();
         Pizza hawaiianPizza3 = hawaiianPizza1.clone();
         Pizza hawaiianPizza4 = hawaiianPizza1.clone();
         Pizza hawaiianPizza5 = hawaiianPizza1.clone();
+        hawaiianFlavor.setName("Hawaiian with extra cheese");
 
-
-        PizzaFlavour pepperoni = new PizzaFlavour("Pepperoni");
+        PizzaFlavor pepperoni = new PizzaFlavor("Pepperoni");
         Pizza pepperoniPizza1 = new Pizza(5, pepperoni);
         Pizza pepperoniPizza2 = pepperoniPizza1.clone();
         Pizza pepperoniPizza3 = pepperoniPizza1.clone();
