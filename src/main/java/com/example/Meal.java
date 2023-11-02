@@ -16,5 +16,4 @@ public abstract class Meal {
         this.price = price;
     }
 
-    public abstract Meal clone();
 }
