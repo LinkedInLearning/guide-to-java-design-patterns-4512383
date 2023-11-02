@@ -2,19 +2,19 @@ package com.example;
 
 public class Pizza extends Meal {
 
-    public Pizza(int price, String flavour) {
+    private PizzaFlavor flavor;
+
+    public Pizza(int price, PizzaFlavor flavor) {
         super(price);
-        this.flavour = flavour;
+        this.flavor = flavor;
     }
 
-    private String flavour;
-
-    public String getFlavour() {
-        return flavour;
+    public PizzaFlavor getFlavor() {
+        return flavor;
     }
 
-    public void setFlavour(String flavour) {
-        this.flavour = flavour;
+    public void setFlavor(PizzaFlavor flavor) {
+        this.flavor = flavor;
     }
 
 
@@ -22,12 +22,12 @@ public class Pizza extends Meal {
     public String toString() {
         return "Pizza{" +
                 "price='" + super.getPrice() + '\'' +
-                "flavour='" + flavour + '\'' +
+                "flavor='" + flavor + '\'' +
                 '}';
     }
 
     @Override
-    public Meal clone() {
-        return new Pizza(this.getPrice(), this.getFlavour());
+    public Pizza clone() {
+        return new Pizza(this.getPrice(), this.getFlavor());
     }
 }
