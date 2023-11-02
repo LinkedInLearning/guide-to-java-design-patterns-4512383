@@ -4,8 +4,8 @@ public class Building extends Graphic {
 
     private BuildingType buildingType;
 
-    public Building(int price, BuildingType buildingType) {
-        super(price);
+    public Building(int heightInPixels, BuildingType buildingType) {
+        super(heightInPixels);
         this.buildingType = buildingType;
     }
 
@@ -24,6 +24,11 @@ public class Building extends Graphic {
                 "height in pixels='" + super.getHeightInPixels() + '\'' +
                 "building type='" + buildingType + '\'' +
                 '}';
+    }
+
+    @Override
+    public Building clone() {
+        return new Building(this.getHeightInPixels(), new BuildingType(this.getBuildingType().getType()));
     }
 
 }
