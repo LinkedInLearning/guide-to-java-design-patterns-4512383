@@ -15,4 +15,6 @@ public abstract class Meal {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public abstract Meal clone();
 }
