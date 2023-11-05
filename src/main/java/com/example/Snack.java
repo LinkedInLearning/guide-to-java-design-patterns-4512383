@@ -1,6 +1,6 @@
 package com.example;
 
-public interface Ticket {
+public interface Snack {
 
     int getPrice();
 
