@@ -2,7 +2,7 @@ package com.example;
 
 public interface BikeFactory {
 
-    Handlebars createHandlebar();
+    Handlebars createHandlebars();
     Pedals createPedals();
     Tire createTire();
 
