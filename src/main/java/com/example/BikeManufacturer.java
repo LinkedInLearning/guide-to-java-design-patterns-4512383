@@ -14,12 +14,14 @@ public class BikeManufacturer {
 
 
     private static Bike buildBike(String bikeType) {
-        BikeFactory bikeFactory = FactoryMaker.createFactory(bikeType);
-        Handlebars handlebars = bikeFactory.createHandlebar();
-        Pedals pedals = bikeFactory.createPedals();
-        Tire frontTire = bikeFactory.createTire();
-        Tire backTire = bikeFactory.createTire();
-        return new Bike(handlebars, pedals, frontTire, backTire);
+        if (bikeType.equalsIgnoreCase("ROAD")) {
+            return new Bike(new RoadBikeHandlebars(), new RoadBikePedals(), new RoadBikeTire(), new RoadBikeTire());
+        } else if (bikeType.equalsIgnoreCase("MOUNTAIN")) {
+            return new Bike(new MountainBikeHandlebars(), new MountainBikePedals(), new MountainBikeTire(), new MountainBikeTire());
+        } else {
+            throw new IllegalArgumentException("Bike type not supported");
+        }
+
     }
 
 }
