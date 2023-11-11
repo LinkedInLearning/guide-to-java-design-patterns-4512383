@@ -2,7 +2,7 @@ package com.example;
 
 public class RoadBikeFactory implements BikeFactory {
     @Override
-    public Handlebars createHandlebar() {
+    public Handlebars createHandlebars() {
         return new RoadBikeHandlebars();
     }
 

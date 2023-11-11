@@ -4,7 +4,7 @@ public class MountainBikeFactory implements BikeFactory {
 
 
     @Override
-    public Handlebars createHandlebar() {
+    public Handlebars createHandlebars() {
         return new MountainBikeHandlebars();
     }
 
