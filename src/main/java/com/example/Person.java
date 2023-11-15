@@ -36,4 +36,47 @@ public class Person
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
+
+    public static class PersonBuilder {
+
+        private final String firstName;
+        private String middleName;
+        private final String lastName;
+        private LocalDate dateOfBirth;
+        private String emailAddress;
+        private String phoneNumber;
+
+        public PersonBuilder(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public PersonBuilder middleName(String middleName) {
+            this.middleName = middleName;
+            return this;
+        }
+
+        public PersonBuilder dateOfBirth(LocalDate dateOfBirth) {
+            this.dateOfBirth = dateOfBirth;
+            return this;
+        }
+
+        public PersonBuilder emailAddress(String emailAddress) {
+            this.emailAddress = emailAddress;
+            return this;
+        }
+
+        public PersonBuilder phoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber;
+            return this;
+        }
+
+        public Person build() {
+            return new Person(firstName, middleName, lastName,
+                    dateOfBirth, emailAddress, phoneNumber);
+        }
+
+
+    }
+
 }
