@@ -4,8 +4,13 @@ public class App {
 
     public static void main(String[] args) {
         var englishLocalisedMessage = new EnglishLocalisedMessage();
-        var greeting = new Greeting(englishLocalisedMessage);
-        greeting.print();
+        var englishGreeting = new Greeting(englishLocalisedMessage);
+        englishGreeting.print();
+
+
+        var frenchLocalisedMessage = new FrenchMessageAdapter();
+        var frenchGreeting = new Greeting(frenchLocalisedMessage);
+        frenchGreeting.print();
     }
 
 }
