@@ -1,6 +1,6 @@
 package com.example;
 
-public class EnglishLocalisedMessage implements LocalisedMessage {
+public class EnglishLocalizedMessage implements LocalizedMessage {
 
 
     @Override

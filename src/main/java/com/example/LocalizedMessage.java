@@ -1,6 +1,6 @@
 package com.example;
 
-public interface LocalisedMessage {
+public interface LocalizedMessage {
 
     void sayHello();
 }

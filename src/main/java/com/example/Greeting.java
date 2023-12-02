@@ -2,14 +2,14 @@ package com.example;
 
 public class Greeting {
 
-    private final LocalisedMessage localisedMessage;
+    private final LocalizedMessage localizedMessage;
 
-    public Greeting(LocalisedMessage localisedMessage) {
-        this.localisedMessage = localisedMessage;
+    public Greeting(LocalizedMessage localizedMessage) {
+        this.localizedMessage = localizedMessage;
     }
 
     public void print() {
-        localisedMessage.sayHello();
+        localizedMessage.sayHello();
     }
 
 
