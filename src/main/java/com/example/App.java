@@ -3,9 +3,9 @@ package com.example;
 public class App {
 
     public static void main(String[] args) {
-        var pdfDocumentUploader = new PdfDocumentUploader();
-        var onlineApplication = new OnlineApplication(pdfDocumentUploader);
-        onlineApplication.uploadDocument();
+        var englishLocalisedMessage = new EnglishLocalisedMessage();
+        var greeting = new Greeting(englishLocalisedMessage);
+        greeting.print();
     }
 
 }
