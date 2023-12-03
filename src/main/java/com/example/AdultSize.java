@@ -1,8 +1,8 @@
 package com.example;
 
-public class Adult implements Size {
+public class AdultSize implements Size {
     @Override
-    public void getSize() {
+    public void get() {
         System.out.println("Adult");
     }
 }
