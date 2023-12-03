@@ -1,6 +1,6 @@
 package com.example;
 
-public interface Size {
+public interface Color {
     void get();
 
 }

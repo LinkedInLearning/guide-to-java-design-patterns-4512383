@@ -1,6 +1,6 @@
 package com.example;
 
-public interface ClothingItem {
+public interface Shape {
 
     void getType();
 
