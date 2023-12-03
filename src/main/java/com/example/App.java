@@ -3,14 +3,11 @@ package com.example;
 public class App {
 
     public static void main(String[] args) {
-        var englishLocalisedMessage = new EnglishLocalisedMessage();
-        var englishGreeting = new Greeting(englishLocalisedMessage);
-        englishGreeting.print();
+        var hoodie = new Hoodie();
+        hoodie.getType();
 
-
-        var frenchLocalisedMessage = new FrenchMessageAdapter();
-        var frenchGreeting = new Greeting(frenchLocalisedMessage);
-        frenchGreeting.print();
+        var shirt = new Shirt();
+        shirt.getType();
     }
 
 }
