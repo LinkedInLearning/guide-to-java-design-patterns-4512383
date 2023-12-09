@@ -3,17 +3,12 @@ package com.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Checklist implements Completable {
+public class Checklist {
 
-    List<TodoItem> todoItemItems = new ArrayList<>();
+    List<TodoItem> todoItems = new ArrayList<>();
 
     public void addTodoItem(TodoItem todoItem) {
-        todoItemItems.add(todoItem);
-    }
-
-    @Override
-    public void isCompleted() {
-        todoItemItems.forEach(TodoItem::isCompleted);
+        todoItems.add(todoItem);
     }
 
 }

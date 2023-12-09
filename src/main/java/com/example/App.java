@@ -14,7 +14,6 @@ public class App {
 
         todoItem1.complete();
 
-        checklist.isCompleted();
     }
 
 }
