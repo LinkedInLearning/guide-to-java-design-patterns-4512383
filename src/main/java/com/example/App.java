@@ -3,16 +3,30 @@ package com.example;
 public class App {
 
     public static void main(String[] args) {
-        Checklist checklist = new Checklist();
-        var todoItem1 = new TodoItem("Do this");
-        var todoItem2 = new TodoItem("Do that");
-        var todoItem3 = new TodoItem("Do something else");
+        var doReMe = new Song();
+        var a = new Note('A');
+        var b = new Note('B');
+        var c = new Note('C');
+        var d = new Note('D');
+        var e = new Note('E');
+        var f = new Note('F');
+        var g = new Note('G');
 
-        checklist.addTodoItem(todoItem1);
-        checklist.addTodoItem(todoItem2);
-        checklist.addTodoItem(todoItem3);
+        doReMe.addNote(c);
+        doReMe.addNote(d);
+        doReMe.addNote(e);
+        doReMe.addNote(c);
+        doReMe.addNote(e);
+        doReMe.addNote(c);
+        doReMe.addNote(e);
 
-        todoItem1.complete();
+        doReMe.getNotes().get(0).play();
+        doReMe.getNotes().get(1).play();
+        doReMe.getNotes().get(2).play();
+        doReMe.getNotes().get(3).play();
+        doReMe.getNotes().get(4).play();
+        doReMe.getNotes().get(5).play();
+        doReMe.getNotes().get(6).play();
 
     }
 
