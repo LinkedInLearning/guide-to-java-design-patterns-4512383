@@ -9,11 +9,15 @@ public class House {
 
         System.out.println();
 
-        // create a room with carpet, curtains and a couch
+        // create a room with a carpet and a couch
+        var roomWithTable = new RoomWithTable(room);
+        roomWithTable.printFurniture();
 
         System.out.println();
 
-        // create a room with carpet, curtains, a couch and a table
+        // create a room with carpet, a couch and a table
+        var roomWithTableAndCouch = new RoomWithCouch(roomWithTable);
+        roomWithTableAndCouch.printFurniture();
 
     }
 
