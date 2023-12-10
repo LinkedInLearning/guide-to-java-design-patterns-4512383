@@ -20,13 +20,7 @@ public class App {
         doReMe.addNote(c);
         doReMe.addNote(e);
 
-        doReMe.getNotes().get(0).play();
-        doReMe.getNotes().get(1).play();
-        doReMe.getNotes().get(2).play();
-        doReMe.getNotes().get(3).play();
-        doReMe.getNotes().get(4).play();
-        doReMe.getNotes().get(5).play();
-        doReMe.getNotes().get(6).play();
+        doReMe.play();
 
     }
 
