@@ -7,11 +7,6 @@ public class Login {
         var user = new BasicUser();
         user.printPrivileges();
 
-        System.out.println();
-
-        var adminUser = new AdminUser(user);
-        adminUser.printPrivileges();
-
     }
 
 }
