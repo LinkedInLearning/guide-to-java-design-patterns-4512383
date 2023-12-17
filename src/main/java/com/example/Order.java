@@ -3,15 +3,17 @@ package com.example;
 public class Order {
 
     private String name;
-    private boolean isPaidFor = false;
 
     public Order(String name) {
         this.name = name;
-        System.out.println("One " + name + " ordered");
-    }
+        System.out.println("Creating " + name + " object");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Done creating " + name + " object");
 
-    public void receivePayment() {
-        this.isPaidFor = true;
     }
 
 }
