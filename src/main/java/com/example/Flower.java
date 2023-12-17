@@ -1,10 +1,10 @@
 package com.example;
 
-public class Order {
+public class Flower {
 
     private String name;
 
-    public Order(String name) {
+    public Flower(String name) {
         this.name = name;
         System.out.println("Creating " + name + " object");
         try {
