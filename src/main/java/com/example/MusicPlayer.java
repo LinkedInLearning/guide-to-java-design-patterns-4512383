@@ -5,7 +5,7 @@ public class MusicPlayer {
     private static final RecommendationsProxy recommendationsProxy = new RecommendationsProxy();
 
     public static void main(String[] args) {
-        var user = new User("Jill");
+        var user = new User("Jill", false);
         loadHomePage(user);
         loadDiscoverPage(user);
     }
