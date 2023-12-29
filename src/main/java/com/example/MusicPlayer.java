@@ -3,21 +3,20 @@ package com.example;
 public class MusicPlayer {
 
     public static void main(String[] args) {
-        var user = new User("Jill");
-        loadHomePage(user);
-        loadDiscoverPage(user);
+        goToMovieLibrary();
+        goToFavoriteMovies();
     }
 
-    private static void loadHomePage(User user) {
-        System.out.println("Loading home page...");
-        var recommendations = new SongRecommendations(user);
-        recommendations.showRecommendations(user);
+    private static void goToMovieLibrary() {
+        System.out.println("Loading movie library...");
+        var musicPlayer = new MovieMediaPlayer();
+        musicPlayer.playMedia();
     }
 
-    private static void loadDiscoverPage(User user) {
-        System.out.println("Loading discover page...");
-        var recommendations = new SongRecommendations(user);
-        recommendations.showRecommendations(user);
+    private static void goToFavoriteMovies() {
+        System.out.println("Loading favorite movies...");
+        var musicPlayer = new MovieMediaPlayer();
+        musicPlayer.playMedia();
     }
 
 }
