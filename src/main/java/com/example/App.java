@@ -4,10 +4,11 @@ public class App {
 
     public static void main(String[] args) {
 
-        var message = "Hello World";
-        var request = new LoggerRequest(message, LoggerRequest.LoggerType.CONSOLE);
-        Logger logger = new ConsoleLogger();
-        logger.log(request);
+        Order order = new Order();
+
+        var orderOperationExecutor = new OrderOperationExecutor();
+        orderOperationExecutor.executeOperation(new PlaceOrderOperation(order));
+        orderOperationExecutor.executeOperation(new CancelOrderOperation(order));
 
     }
 
