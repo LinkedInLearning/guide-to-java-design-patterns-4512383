@@ -3,12 +3,9 @@ package com.example;
 public class App {
 
     public static void main(String[] args) {
-
-        var message = "Hello World";
-        var request = new LoggerRequest(message, LoggerRequest.LoggerType.CONSOLE);
-        Logger logger = new ConsoleLogger();
-        logger.log(request);
-
+        var request = new WithdrawalRequest(20, WithdrawalRequest.Currency.USD);
+        var atm = new UsDollarATM();
+        atm.dispense(request);
     }
 
 }
