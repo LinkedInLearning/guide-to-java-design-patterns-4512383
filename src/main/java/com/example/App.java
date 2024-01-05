@@ -3,19 +3,20 @@ package com.example;
 public class App {
 
     public static void main(String[] args) {
-        var movieMediaPlayer = new MovieMediaPlayerProxy();
-        goToMovieLibrary(movieMediaPlayer);
-        goToFavoriteMovies(movieMediaPlayer);
+
+        var message = "Hello World";
+        var request = new LoggerRequest(message, LoggerRequest.LoggerType.FILE);
+        Logger loggerChain = buildChain();
+        loggerChain.log(request);
+
     }
 
-    private static void goToMovieLibrary(MovieMediaPlayerProxy movieMediaPlayer) {
-        System.out.println("Loading movie library...");
-        movieMediaPlayer.playMedia();
+    private static Logger buildChain() {
+        var fileLogger = new FileLogger(null);
+        var consoleLogger = new ConsoleLogger(fileLogger);
+        return consoleLogger;
     }
 
-    private static void goToFavoriteMovies(MovieMediaPlayerProxy movieMediaPlayer) {
-        System.out.println("Loading favorite movies...");
-        movieMediaPlayer.playMedia();
-    }
+
 
 }
