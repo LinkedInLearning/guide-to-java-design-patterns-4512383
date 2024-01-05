@@ -4,10 +4,10 @@ public class App {
 
     public static void main(String[] args) {
 
-        var message = "Hello World";
-        var request = new LoggerRequest(message, LoggerRequest.LoggerType.CONSOLE);
-        Logger logger = new ConsoleLogger();
-        logger.log(request);
+        var amount = 12;
+        var request = new WithdrawalRequest(amount, WithdrawalRequest.Currency.USD);
+        var ATM = new UsDollarATM();
+        ATM.dispense(request);
 
     }
 
