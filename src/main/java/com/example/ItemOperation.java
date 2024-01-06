@@ -1,6 +1,6 @@
 package com.example;
 
-public interface OrderOperation {
+public interface ItemOperation {
 
     void execute();
 
