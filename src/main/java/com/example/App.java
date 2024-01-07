@@ -3,12 +3,13 @@ package com.example;
 public class App {
 
     public static void main(String[] args) {
-        var context = "hello world";
-        System.out.println(context);
 
-        var sentenceShouldEndWithPeriod = new SentenceShouldEndWithPeriod();
-        var result = sentenceShouldEndWithPeriod.interpret(context);
-        System.out.println(result);
+        var pen = new Item("Pen", 20);
+        var pencil = new Item("Pencil", 0);
+        var eraser = new Item("Eraser", 15);
+
+
+
     }
 
 }
