@@ -16,7 +16,7 @@ public class Inventory implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return null;
+        return new StockIterator(this);
     }
 
 }
