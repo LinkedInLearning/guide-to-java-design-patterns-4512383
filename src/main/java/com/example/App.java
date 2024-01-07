@@ -5,11 +5,13 @@ public class App {
     public static void main(String[] args) {
 
         var board = new Board();
-        var ticket = new Ticket(board);
+        var ticket = new Ticket();
         var assignee = new Assignee();
 
-        assignee.pickUpTicket(ticket);
-        assignee.resolveTicket(ticket);
+        var mediator = new Mediator(ticket, assignee, board);
+        mediator.pickUpTicket();
+        System.out.println();
+        mediator.resolveTicket();
 
 
     }

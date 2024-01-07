@@ -12,10 +12,7 @@ public class Ticket {
 
     private Status status;
 
-    private Board board;
-
-    public Ticket(Board board) {
-        this.board = board;
+    public Ticket() {
         this.status = Status.SUBMITTED;
     }
 
@@ -28,15 +25,8 @@ public class Ticket {
         System.out.println("Ticket status changed to " + status);
     }
 
-    public Assignee getAssignee() {
-        return this.assignee;
-    }
-
     public void setAssignee(Assignee assignee) {
         this.assignee = assignee;
     }
 
-    public Board getBoard() {
-        return this.board;
-    }
 }

@@ -19,6 +19,8 @@ public class Board {
     public void addTicketToDoneTickets(Ticket ticket) {
         doneTickets.add(ticket);
         System.out.println("Ticket added to doneTickets");
+        inProgressTickets.remove(ticket);
+        System.out.println("Ticket removed from inProgressTickets");
     }
 
 
