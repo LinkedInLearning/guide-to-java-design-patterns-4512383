@@ -1,7 +1,5 @@
 package com.example;
 
-import java.beans.PropertyChangeSupport;
-
 public class User {
 
     private String status;
