@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Newsfeed implements PropertyChangeListener {
 
-    private List<String> statuses = new ArrayList<String>();
+    private List<String> statuses = new ArrayList<>();
 
     public void printStatuses() {
         statuses.forEach(System.out::println);
