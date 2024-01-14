@@ -4,14 +4,14 @@ public class App {
 
     public static void main(String[] args) {
 
-        var user1 = new User();
-        var user2 = new User();
-        var newsfeed = new Newsfeed();
+        var location1 = new Location();
+        var location2 = new Location();
+        var weatherUpdates = new WeatherUpdates();
 
-        user1.setStatus("Going for a walk");
-        user2.setStatus("Enjoying a coffee");
+        location1.setWeatherEvent("Risk of flooding");
+        location2.setWeatherEvent("Risk of drought");
 
-        newsfeed.printStatuses();
+        weatherUpdates.printUpdates();
     }
 
 }
