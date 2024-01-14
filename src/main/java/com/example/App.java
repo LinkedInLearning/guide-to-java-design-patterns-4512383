@@ -8,6 +8,9 @@ public class App {
         var location2 = new Location();
         var weatherUpdates = new WeatherUpdates();
 
+        location1.addPropertyChangeListener(weatherUpdates);
+        location2.addPropertyChangeListener(weatherUpdates);
+
         location1.setWeatherEvent("Risk of flooding");
         location2.setWeatherEvent("Risk of drought");
 
