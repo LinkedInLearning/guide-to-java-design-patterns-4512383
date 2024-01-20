@@ -4,10 +4,10 @@ public class App {
 
     public static void main(String[] args) {
 
-        var logInPage = new LogInPage();
+        var loginPage = new LoginPage();
 
-        logInPage.logIn(new PasswordAuthenticator());
-        logInPage.logIn(new SingleSignOnAuthenticator());
+        loginPage.logInUser(Authenticator.passwordAuthenticator);
+        loginPage.logInUser(Authenticator.singleSignOnAuthenticator);
 
     }
 
