@@ -4,9 +4,10 @@ public class App {
 
     public static void main(String[] args) {
 
-        var mediaPlayer = new MediaPlayer();
-        mediaPlayer.pressButton();
-        mediaPlayer.pressButton();
+        var logInPage = new LogInPage();
+
+        logInPage.logIn(new PasswordAuthenticator());
+        logInPage.logIn(new SingleSignOnAuthenticator());
 
     }
 
