@@ -4,10 +4,10 @@ public class App {
 
     public static void main(String[] args) {
 
-        var loginPage = new LoginPage();
+        var checkoutPage = new CheckoutPage();
 
-        loginPage.logInUser(new PasswordAuthenticator());
-        loginPage.logInUser(new SingleSignOnAuthenticator());
+        checkoutPage.payWithCard();
+        checkoutPage.payByBankTransfer();
 
     }
 
