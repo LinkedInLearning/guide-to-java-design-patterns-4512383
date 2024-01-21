@@ -4,15 +4,15 @@ public class App {
 
     public static void main(String[] args) {
 
-        var welcomeEmail = new WelcomeEmail();
-        welcomeEmail.sendGreeting();
-        welcomeEmail.sendMessageBody();
-        welcomeEmail.sendClosing();
+        var vegetarianPizza = new VegetarianPizza();
+        vegetarianPizza.makeBase();
+        vegetarianPizza.addToppings();
+        vegetarianPizza.cook();
 
-        var unsubscribeEmail = new UnsubscribeEmail();
-        unsubscribeEmail.sendGreeting();
-        unsubscribeEmail.sendMessageBody();
-        unsubscribeEmail.sendClosing();
+        var meatFeastPizza = new MeatFeastPizza();
+        meatFeastPizza.makeBase();
+        meatFeastPizza.addToppings();
+        meatFeastPizza.cook();
 
     }
 
