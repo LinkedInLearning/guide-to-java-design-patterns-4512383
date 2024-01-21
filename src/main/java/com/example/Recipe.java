@@ -1,6 +1,6 @@
 package com.example;
 
-public class App {
+public class Recipe {
 
     public static void main(String[] args) {
 
