@@ -4,10 +4,15 @@ public class App {
 
     public static void main(String[] args) {
 
-        var checkoutPage = new CheckoutPage();
+        var welcomeEmail = new WelcomeEmail();
+        welcomeEmail.sendGreeting();
+        welcomeEmail.sendMessageBody();
+        welcomeEmail.sendClosing();
 
-        checkoutPage.payForItems(PaymentMethod.card);
-        checkoutPage.payForItems(PaymentMethod.bankTransfer);
+        var unsubscribeEmail = new UnsubscribeEmail();
+        unsubscribeEmail.sendGreeting();
+        unsubscribeEmail.sendMessageBody();
+        unsubscribeEmail.sendClosing();
 
     }
 
