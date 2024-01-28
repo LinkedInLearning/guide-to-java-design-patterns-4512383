@@ -12,13 +12,24 @@ public class Directory implements Element {
         this.name = name;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
     public void addElement(Element element) {
         elements.add(element);
+    }
+
+    public List<Element> getElements() {
+        return elements;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+//        for (Element e : this.elements) {
+//            e.accept(visitor);
+//        }
     }
 
 }

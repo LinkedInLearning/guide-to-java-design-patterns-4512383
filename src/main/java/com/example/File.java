@@ -10,7 +10,6 @@ public class File implements Element {
         this.size = size;
     }
 
-    @Override
     public String getName() {
         return name;
     }
@@ -18,4 +17,11 @@ public class File implements Element {
     public int getSize() {
         return size;
     }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+
 }
