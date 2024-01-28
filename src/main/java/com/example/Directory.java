@@ -3,33 +3,26 @@ package com.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Directory implements Element {
+public class Directory implements FileSystemElement {
 
-    private String name;
-    private List<Element> elements = new ArrayList<>();
+    private final String name;
+    private final List<FileSystemElement> elements = new ArrayList<>();
 
     public Directory(String name) {
         this.name = name;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
-    public void addElement(Element element) {
+    public void addElement(FileSystemElement element) {
         elements.add(element);
     }
 
-    public List<Element> getElements() {
+    public List<FileSystemElement> getElements() {
         return elements;
-    }
-
-    @Override
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-//        for (Element e : this.elements) {
-//            e.accept(visitor);
-//        }
     }
 
 }

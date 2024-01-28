@@ -14,11 +14,6 @@ public class App {
 
         directory1.addElement(directory2);
 
-        var visitor = new CalculateSizeVisitor();
-        directory1.accept(visitor);
-
-        System.out.println("Total size: " + visitor.getTotalSize());
-
     }
 
 }
