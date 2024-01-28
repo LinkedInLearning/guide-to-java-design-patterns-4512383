@@ -1,9 +1,9 @@
 package com.example;
 
-public class File implements Element {
+public class File implements FileSystemElement {
 
-    private String name;
-    private int size;
+    private final String name;
+    private final int size;
 
     public File(String name, int size) {
         this.name = name;
@@ -18,4 +18,11 @@ public class File implements Element {
     public int getSize() {
         return size;
     }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+
 }
