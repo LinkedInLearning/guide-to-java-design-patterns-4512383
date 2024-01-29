@@ -5,11 +5,7 @@ import java.util.List;
 
 public class GroupTicket implements TicketElement {
 
-    private int price;
     private final List<TicketElement> elements = new ArrayList<>();
-
-    public GroupTicket() {
-    }
 
     @Override
     public int getPrice() {
@@ -22,11 +18,6 @@ public class GroupTicket implements TicketElement {
 
     public List<TicketElement> getElements() {
         return elements;
-    }
-
-    @Override
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
     }
 
 }
