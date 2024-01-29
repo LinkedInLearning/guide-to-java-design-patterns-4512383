@@ -11,10 +11,10 @@ public class App {
 
         System.out.println("Price: " + groupTicket.getPrice());
 
-        var discountVisitor = new DiscountVisitor();
-        groupTicket.accept(discountVisitor);
-
-        System.out.println("Price: " + groupTicket.getPrice());
+//        var discountVisitor = new DiscountVisitor();
+//        groupTicket.accept(discountVisitor);
+//
+//        System.out.println("Price: " + groupTicket.getPrice());
     }
 
 }
