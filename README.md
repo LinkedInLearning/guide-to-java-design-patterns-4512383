@@ -39,5 +39,5 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
 [lil-course-url]: https://www.linkedin.com/learning/complete-guide-to-java-design-patterns-creational-behavioral-and-structural
-[lil-thumbnail-url]: [http://](https://media.licdn.com/dms/image/D4D0DAQEyFMOVuMzMew/learning-public-crop_675_1200/0/1711582600788?e=2147483647&v=beta&t=8fPn5iZ-ghDqbhm2QXeWYKlDNbUaIIHAV7rhwBEa8OU)
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4D0DAQEyFMOVuMzMew/learning-public-crop_675_1200/0/1711582600788?e=2147483647&v=beta&t=8fPn5iZ-ghDqbhm2QXeWYKlDNbUaIIHAV7rhwBEa8OU
 
