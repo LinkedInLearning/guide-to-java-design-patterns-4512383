@@ -2,6 +2,12 @@
 
 This is the repository for the LinkedIn Learning course `A Complete Guide to Java Design Patterns: Creational, Behavioral, and Structural`. The full course is available from [LinkedIn Learning][lil-course-url].
 
+![lil-thumbnail-url]
+
+<p>In this course, developer Bethan Palmer guides you through using creative, behavioral, and structural design patterns in Java. Find out how design patterns help you write cleaner, more elegant code, and explore a wide range of patterns with real world examples. Practice and reinforce what you learn with hands-on challenges in each chapter.</p>
+
+<p>The best way to learn a language is to use it in practice. That’s why this course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out the “Using GitHub Codespaces with this course” video to learn how to get started.</p>
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -21,15 +27,17 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+ ### Instructor
+
+Bethan Palmer
+
+Developer
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/bethan-palmer?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/complete-guide-to-java-design-patterns-creational-behavioral-and-structural
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4D0DAQEyFMOVuMzMew/learning-public-crop_675_1200/0/1711582600788?e=2147483647&v=beta&t=8fPn5iZ-ghDqbhm2QXeWYKlDNbUaIIHAV7rhwBEa8OU
 
