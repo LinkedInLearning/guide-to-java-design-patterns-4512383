@@ -1,9 +1,13 @@
 package com.example;
 
-public class PrintSpooler {
-
-    private PrintSpooler(){}
-    private static PrintSpooler INSTANCE;
+public enum PrintSpooler {
+    
+    INSTANCE;
+    
+    private PrintSpooler() {}
+    public static PrintSpooler getInstance(){
+        return INSTANCE;
+    }
 
     void print() {
         System.out.println("Printing...");
