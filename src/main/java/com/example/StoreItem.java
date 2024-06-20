@@ -45,6 +45,9 @@ public class StoreItem
         public StoreItemBuilder(String name, Double price){
             this.name = name;
             this.price = price;
+            if (name == null || price == null) {
+                throw new IllegalArgumentException("Name and price must not be null");
+            }
         }
 
         public StoreItemBuilder shortDescription(String shortDescription){
